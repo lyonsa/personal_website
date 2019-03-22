@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EmailService } from '../../email.service';
 
 @Component({
   selector: 'app-contact',
@@ -10,7 +11,7 @@ export class ContactComponent implements OnInit {
   email: string;
   message: string;
 
-  constructor() { }
+  constructor(private emailService: EmailService) { }
 
   ngOnInit() { }
 
@@ -18,9 +19,16 @@ export class ContactComponent implements OnInit {
    * Process the form we have. Send to whatever backend
    * Only alerting for now
    */
+
   processForm() {
-    const allInfo = `My name is ${this.name}. My email is ${this.email}. My message is ${this.message}`;
-    alert(allInfo);
+    const email = {
+      'to': 'allyons16@gmail.com',
+      'subject': `Message from ${this.name}`,
+      'html': `<p>${this.message}<br>sent from ${this.email}</p> `,
+      'sendername':`${this.name}`
+    };
+    console.log(email);
+    this.emailService.sendEmail(email);
   }
 
 }

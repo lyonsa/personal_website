@@ -2,7 +2,7 @@
 
   <!-- logo -->
   <div class="navbar-brand">
-    <a class="navbar-item">
+    <a class="navbar-item" routerLink="">
       <p class="has-text-weight-bold is-size-4">&lang;AL&rang;</p>
     </a>
       <a (click)="toggleNavbar()" role="button" #navBurger class="navbar-burger burger" data-target="navMenu"
@@ -14,10 +14,10 @@
   </div>
 
   <div class="navbar-menu" id="navMenu" #navMenu>
-    <div class="navbar-end">
-      <a class="navbar-item" routerLink="">Home</a>
-      <a class="navbar-item" routerLink="resume">Resume</a>
-      <a class="navbar-item" routerLink="contact">Contact</a>
+    <div  class="navbar-end">
+      <a  class="navbar-item" routerLink="" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a  class="navbar-item" routerLink="resume" routerLinkActive="is-active">Resume</a>
+      <a  class="navbar-item" routerLink="contact" routerLinkActive="is-active">Contact</a>
     </div>
   </div>
 </nav>

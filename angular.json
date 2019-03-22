@@ -28,9 +28,12 @@
             ],
             "styles": [
               "./node_modules/bulma/css/bulma.css",
+              "node_modules/pace-js/themes/blue/pace-theme-minimal.css",
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              // "./node_modules/pace-js/pace.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
