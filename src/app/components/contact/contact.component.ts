@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailService } from '../../email.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -29,6 +30,8 @@ export class ContactComponent implements OnInit {
     };
     console.log(email);
     this.emailService.sendEmail(email);
+    alert("Your message has been sent!")
+    window.location.href='';
   }
 
 }

@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable, throwError } from 'rxjs';
 
 
 @Injectable({providedIn: 'root'})
@@ -19,7 +18,7 @@ export class EmailService {
     console.log(mail);
     return this.http.post(this.apiUrl, mail, this.httpOptions)
       .subscribe(
-        data => {console.log("POST REQUEST SUCCESSFUL ", data)}
+        data => {}
       ),
       error => {
         console.log("ERROR WITH POST REQUEST ", error);
