@@ -2,3 +2,20 @@
 background: transparent !important;
 background-size: cover;
 }
+
+.column {
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 53pt;
+    color: #fff
+}
+
+span{
+    display: inline-block;
+}

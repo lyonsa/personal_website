@@ -3,21 +3,21 @@
   <!-- logo -->
   <div class="navbar-brand">
     <a class="navbar-item" routerLink="">
-      <p class="has-text-weight-bold is-size-4">&lang;AL&rang;</p>
+      <img src="../../../assets/AL_logo.png" alt="Allen Lyons: a software developer for everyone">
     </a>
-      <a (click)="toggleNavbar()" role="button" #navBurger class="navbar-burger burger" data-target="navMenu"
-        aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
+    <a (click)="toggleNavbar()" role="button" #navBurger class="navbar-burger burger is-large" data-target="navMenu"
+      aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
   </div>
 
   <div class="navbar-menu" id="navMenu" #navMenu>
     <div  class="navbar-end">
-      <a  class="navbar-item" routerLink="" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-      <a  class="navbar-item" routerLink="resume" routerLinkActive="is-active">Resume</a>
-      <a  class="navbar-item" routerLink="contact" routerLinkActive="is-active">Contact</a>
+      <a  class="navbar-item is-size-5" routerLink="" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a  class="navbar-item is-size-5" href="../../../assets/lyonsa_resume_20190321.pdf" routerLinkActive="is-active">Resume</a>
+      <a  class="navbar-item is-size-5" routerLink="contact" routerLinkActive="is-active">Contact</a>
     </div>
   </div>
 </nav>

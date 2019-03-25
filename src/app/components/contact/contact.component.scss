@@ -3,5 +3,13 @@ background: transparent !important;
 }
 
 .box{
-  opacity: .95;
+  background: rgba(255, 255, 255, 0.4);
+}
+.section {
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
