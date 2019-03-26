@@ -1,18 +1,10 @@
-<!-- <section class="hero is-primary is-bold">
-  <div class="hero-body">
-    <div class="container">
 
-      <h1 class="title">Contact Us!</h1>
-      
-    </div>
-  </div>
-</section> -->
 
 <section class="section">
-  <div class="column is-8 box">
-
+  <div class="column is-8">
+    <h1 class="title is-size-2">Contact Me!</h1>
     <!-- form goes here -->
-    <form (ngSubmit)="processForm()">
+    <form (ngSubmit)="processForm()" class="box">
     
       <!-- name -->
       <div class="field is-horizontal is-grouped">
@@ -53,7 +45,9 @@
         <textarea class="textarea" name="message" placeholder="What's on your mind?" [(ngModel)]="message" required
           #messageInput="ngModel"></textarea>
       </div>
-      <button type="submit" class="button is-danger is-large">Submit</button>
+      <div class="column is-centered is-2 is-offset-5">
+        <button type="submit" class="button is-danger is-large is-centered">Submit</button>
+      </div>
     </form>
 
   </div>

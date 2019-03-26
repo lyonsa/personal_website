@@ -13,9 +13,45 @@ background-size: cover;
 
 .title{
     font-size: 53pt;
-    color: #fff
+    color: #fff;
 }
 
-span{
+p{
+    margin-top: 1em;
+}
+
+img{
+    width: 20em;
+}
+
+.icon{
+    padding: 2.5em;
+}
+
+span.text-highlight{
     display: inline-block;
+}
+
+span#web-dev{
+    color: blue;
+}
+span#db-manager{
+    color: red;
+}
+span#etl-dev{
+    color: green;
+}
+span#linux-admin{
+    color: purple;
+}
+span#dragon{
+    color: gold;
+}
+span a{
+    color: rgb(241, 241, 241);
+    transition: 0.5s;
+}
+
+span a:hover{
+    color: rgb(54, 54, 54);
 }
