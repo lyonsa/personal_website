@@ -33,19 +33,25 @@ span.text-highlight{
 }
 
 span#web-dev{
-    color: blue;
+
+    color: rgb(15, 15, 204);
+    box-shadow: inset 0 -6px 0 rgba(15, 15, 204, 0.2);
 }
 span#db-manager{
-    color: red;
+    color: rgb(179, 16, 16);
+    box-shadow: inset 0 -6px 0 rgba(179, 16, 16, 0.2);
 }
 span#etl-dev{
-    color: green;
+    color: rgb(201, 23, 127);
+    box-shadow: inset 0 -6px 0 rgba(201, 23, 127, 0.2);
 }
 span#linux-admin{
+    box-shadow: inset 0 -6px 0 rgba(255,74,110,.2);
     color: purple;
 }
 span#dragon{
-    color: gold;
+    color: rgb(255, 215, 0);
+    box-shadow: inset 0 -6px 0 rgba(255, 215, 0,.5);
 }
 span a{
     color: rgb(241, 241, 241);
@@ -54,4 +60,6 @@ span a{
 
 span a:hover{
     color: rgb(54, 54, 54);
+    font-weight: 400;
 }
+

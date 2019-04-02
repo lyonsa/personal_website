@@ -35,7 +35,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              // "./node_modules/pace-js/pace.js"
+              "./node_modules/pace-js/pace.js"
             ],
             "es5BrowserSupport": true
           },
